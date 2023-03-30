@@ -130,9 +130,8 @@ double[] MedNum(int[,] array)
     for (int i = 0; i < array.GetLength(1); i++)
     {
         for (int row = 0; row < array.GetLength(0); row++) 
-        {
-            sum += array[row,i];
-        }        
+            sum += array[row,i]; 
+                  
         array1[i] = sum / array.GetLength(0); 
         sum = 0;     
     }
